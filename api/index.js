@@ -2,11 +2,11 @@ const express = require("express");
 const dbConnect = require("./config/database");
 require("dotenv").config();
 const app = express();
-const PORT = process.env.port;
+const port = process.env.PORT;
 var cors = require("cors");
 
 app.use(express.json()); //middleware for parse req body
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log("SERVER IS ON 3000: ");
 });
 

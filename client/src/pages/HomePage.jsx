@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [employee, setEmployee] = useState();
-  //           BASE URL           END POINT
-  const url = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/get`;
+  //           BASE URL                                       END POINT
+  const url = `${import.meta.env.VITE_BACKEND_BASEURL}/get`;
+
   const getAllData = async () => {
     try {
       const getPeople = await fetch(url, {
@@ -13,13 +14,6 @@ const HomePage = () => {
           "Content-Type": "application/json",
         },
       });
-      // we can also write like this using dot env method.
-      //   const getPeople = await fetch(`${process.env.baseUrl}/get`, {
-      //     method: "GET",
-      //     header: {
-      //       "Content-Type": "application/json",
-      //     },
-      //   });
       const res = await getPeople.json();
       setEmployee(res);
     } catch (error) {

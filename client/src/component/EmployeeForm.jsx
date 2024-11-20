@@ -11,7 +11,7 @@ const EmployeeForm = () => {
     role: "",
   });
 
-  let url = "http://localhost:4000/base/add";
+  let url = `${import.meta.env.VITE_BACKEND_BASEURL}/add`;
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
