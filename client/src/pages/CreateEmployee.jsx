@@ -8,7 +8,7 @@ const CreateEmployee = () => {
       <div className="relative w-2/4">
         <img
           className="object-cover h-full"
-          src="../../public/image/pexels-olly-927022.jpg"
+          src="/image/pexels-olly-927022.jpg"
         />
         <div className="absolute bg-gradient-to-t from-black inset-0 flex items-end justify-center z-10">
           <h3 className="text-4xl font-bold text-white w-[500px] pb-11">
