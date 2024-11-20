@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   const [employee, setEmployee] = useState();
   //           BASE URL           END POINT
-  const url = "http://localhost:4000/base/get";
+  const url = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/get`;
   const getAllData = async () => {
     try {
       const getPeople = await fetch(url, {

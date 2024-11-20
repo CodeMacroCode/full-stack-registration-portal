@@ -1,1 +1,13 @@
 .vercel
+
+# Environment variables
+client/.env
+client/.env.local
+client/.env.*.local
+api/.env
+client/.env.local
+client/.env.*.local
+
+# Node modules
+client/node_modules/
+api/node_modules/
