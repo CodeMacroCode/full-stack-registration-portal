@@ -11,7 +11,7 @@ const EmployeeForm = () => {
     role: "",
   });
 
-  let url = `${import.meta.env.VITE_BACKEND_BASEURL}/add`;
+  let url = `http://full-stack-registration-portal.vercel.app/base/add`;
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {

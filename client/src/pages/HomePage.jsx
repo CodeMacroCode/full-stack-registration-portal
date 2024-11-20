@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   const [employee, setEmployee] = useState();
   //           BASE URL                                       END POINT
-  const url = `${import.meta.env.VITE_BACKEND_BASEURL}/get`;
+  const url = `http://full-stack-registration-portal.vercel.app/base/get`;
 
   const getAllData = async () => {
     try {
