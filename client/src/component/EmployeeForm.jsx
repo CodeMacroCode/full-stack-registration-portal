@@ -11,7 +11,7 @@ const EmployeeForm = () => {
     role: "",
   });
 
-  let url = `http://full-stack-registration-portal.vercel.app/base/add`;
+  let url = `https://full-stack-registration-portal.vercel.app/base/add`;
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
