@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const url = process.env.url;
+const url = process.env.MONGODB_URI;
 
 const dbConnect = () => {
   mongoose

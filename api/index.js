@@ -7,7 +7,7 @@ var cors = require("cors");
 
 app.use(express.json()); //middleware for parse req body
 app.listen(PORT, () => {
-  console.log("SERVER IS ON 4000: ");
+  console.log("SERVER IS ON 3000: ");
 });
 
 dbConnect();
