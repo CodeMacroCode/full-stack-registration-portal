@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 const HomePage = () => {
   const [employee, setEmployee] = useState();
   //           BASE URL                                       END POINT
@@ -30,7 +31,7 @@ const HomePage = () => {
         <div>
           <h2 className="text-lg font-bold">Employees</h2>
           <p>
-            This is the list of all the employees. You can add new employees.
+            This is the list of all the employees. You can add employees.
           </p>
         </div>
         <Link
